@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Enregistrer nouvel article{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    
+    .input_block {
+        margin-bottom: 1rem;
+    }
+    .input_block label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    .input_block input {
+        padding: 0.5rem 0.75rem;
+        border-radius: 10px;
+        width: 500px;
+    }
+    .btn {
+        background-color: #083D77;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        transition: ease-in-out .3s;
+    }
+    .btn:hover {
+        background-color: #083De5;
+    }
+</style>
+
+<div class="example-wrapper">
+    <h1>Créer un nouvel article</h1>
+    {# <form method="post">
+        <div class="input_block">
+            <label>Nom : </label>
+            <input type="text" name="nom" placeholder="ex: mangue">
+        </div>
+        <div class="input_block">
+            <label>Prix : </label>
+            <input type="text" name="prix" placeholder="ex: 200">
+        </div>
+        <div class="input_block">
+            <label>Date d'expiration : </label>
+            <input type="date" name="date_expiration">
+        </div>
+        
+        <input type="submit" class="btn" value="Enregistrer">
+    </form> #}
+    {{ form }}
+</div>
+{% endblock %}
